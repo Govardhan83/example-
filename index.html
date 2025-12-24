@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: "Georgia", serif;
@@ -16,43 +20,46 @@
 
         .page {
             height: 100vh;
+            width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 20px;
             transition: transform 0.8s ease;
         }
 
         .container {
             background: #ffffff;
-            max-width: 700px;
-            padding: 50px;
-            border-radius: 14px;
+            width: 100%;
+            max-width: 720px;
+            padding: 40px;
+            border-radius: 16px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.08);
             text-align: center;
         }
 
         h1 {
-            font-size: 30px;
+            font-size: clamp(26px, 5vw, 32px);
             font-weight: normal;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
 
         h2 {
-            font-size: 18px;
+            font-size: clamp(16px, 4vw, 18px);
             font-weight: normal;
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 28px;
         }
 
         p {
-            font-size: 17px;
+            font-size: clamp(15px, 4vw, 17px);
             line-height: 1.8;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .next-btn {
-            margin-top: 30px;
-            padding: 10px 28px;
+            margin-top: 28px;
+            padding: 12px 34px;
             font-size: 15px;
             background: transparent;
             border: 1px solid #ccc;
@@ -72,7 +79,7 @@
         #page2 {
             position: absolute;
             top: 100vh;
-            width: 100%;
+            left: 0;
         }
 
         body.show-page2 #page1 {
@@ -89,9 +96,16 @@
         }
 
         .signature {
-            margin-top: 40px;
-            font-size: 16px;
+            margin-top: 36px;
+            font-size: 15px;
             color: #777;
+        }
+
+        /* Extra comfort for very small screens */
+        @media (max-width: 380px) {
+            .container {
+                padding: 28px;
+            }
         }
     </style>
 </head>
@@ -104,35 +118,35 @@
             <h2>— to sanjuuuuu</h2>
 
             <p>
-                there’s nothing wrong if you don’t achieve what you had in your mind.  
-                there’s nothing wrong in failing. krishna bhagwan ne bola tha  
+                there’s nothing wrong if you don’t achieve what you had in your mind.
+                there’s nothing wrong in failing. krishna bhagwan ne bola tha
                 <i>“karam karo parth”</i>.
             </p>
 
             <p>
-                abhi you are getting ready for finals, so learn from your mistakes.  
+                abhi you are getting ready for finals, so learn from your mistakes.
                 don’t get disappointed in yourself. don’t demotivate yourself.
             </p>
 
             <p>
-                you are hardworking, and you don’t have to prove anything to anyone —  
-                not even to your parents. they expect things from you, yes,  
+                you are hardworking, and you don’t have to prove anything to anyone —
+                not even to your parents. they expect things from you, yes,
                 but you don’t have to rush yourself.
             </p>
 
             <p>
-                let’s take it slow and work towards the goal.  
-                being angry on yourself and talking shit about yourself  
+                let’s take it slow and work towards the goal.
+                being angry on yourself and talking shit about yourself
                 is not going to make anything better.
             </p>
 
             <p>
-                you know what you go through and still put up bravely.  
+                you know what you go through and still put up bravely.
                 it’s totally alright if you couldn’t get what you wanted.
             </p>
 
             <p>
-                it’s not the end. you still have the chance to make things better.  
+                it’s not the end. you still have the chance to make things better.
                 so let’s work towards it.
             </p>
 
@@ -146,12 +160,12 @@
             <h1>You Are Enough</h1>
 
             <p>
-                If today feels heavy, that’s okay.  
+                If today feels heavy, that’s okay.
                 You don’t need to have everything figured out right now.
             </p>
 
             <p>
-                Progress is not always loud.  
+                Progress is not always loud.
                 Sometimes it’s just getting through the day — and that is strength.
             </p>
 
@@ -173,4 +187,3 @@
 
 </body>
 </html>
-
